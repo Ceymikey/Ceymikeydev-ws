@@ -1,0 +1,5 @@
+# Redirect from /old-url to /new-url
+/index.html    /info    301
+
+# Rewrite all requests to /app to the index.html file
+/app/*    /index.html    200
