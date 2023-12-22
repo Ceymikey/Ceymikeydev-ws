@@ -2,4 +2,4 @@
 /index.html    /info    301
 
 # Rewrite all requests to /app to the index.html file
-/app/*    /index.html    200
+/ceymikey    /index.html    200
