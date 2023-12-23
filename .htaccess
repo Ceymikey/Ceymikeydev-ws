@@ -1,17 +1,14 @@
 RewriteEngine on
 
+# Redirect permanent "/" "/pages/admin/ceymikey"
+RedirectMatch permanent "^/$" "/pages/admin/ceymikey"
+
+# RewriteRule ^index$ /ceymikey [R=301,L]  # Uncomment this line if needed
+
+# RewriteRule ^$ /ceymikey [L,R=301]  # Uncomment this line if needed
+
 RewriteCond %{REQUEST_FILENAME} !-d
-
 RewriteCond %{REQUEST_FILENAME}\.html -f
-
 RewriteRule ^(.*)$ $1.html [NC,L]
 
-ErrorDocument 404 /pages/errors/404
-
-
-Redirect permanent "/" "/pages/admin/ceymikey"
-
-
-RewriteRule ^index$ /ceymikey [R=301,L]
-
-RewriteRule ^$ /ceymikey [L,R=301]
+ErrorDocument 404 /pages/errors/404.html
