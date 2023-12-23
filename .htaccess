@@ -10,3 +10,5 @@ ErrorDocument 404 /404.html
 
 
 RewriteRule ^index$ /ceymikey [R=301,L]
+
+RewriteRule ^$ /ceymikey [L,R=301]

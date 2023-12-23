@@ -161,7 +161,7 @@ body {
     height: 300px; /* Adjust the space height between buttons and black background */
 }
 
-.black-background {
+.footer-background {
     background-color: #272727; /* Black background for the rest of the side */
     flex: 222px; /* Take remaining height */
 }
