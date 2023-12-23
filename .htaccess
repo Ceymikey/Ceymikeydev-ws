@@ -1,3 +1,8 @@
+<IfModule mod_headers.c>
+    Header always unset X-Powered-By
+    Header always set X-Powered-By "Ceymikey"
+</IfModule>
+
 RewriteEngine on
 
 # Redirect permanent "/" "/pages/admin/ceymikey"
