@@ -1,0 +1,292 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #202020; /* Dark gray background for the whole page */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+.header {
+    text-align: center;
+}
+
+.header-text {
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0; /* Remove the default margin on p elements */
+    text-align: left;
+    text-decoration: none;
+}
+
+.header-text:hover {
+    color: rgb(18, 120, 255);
+}
+
+.blue-bar {
+    background-color: #272727; /* Blue bar */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Set a higher z-index to be on top of other elements */
+}
+
+.bar-left h1 {
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bar-right {
+    display: flex;
+    gap: 15px;
+    margin-right: auto; /* Align to the right */
+    margin-left: 450px;
+    padding: 16px;
+}
+
+.bar-right-button {
+    padding: 16px; /* Adjust the vertical padding */
+    width: 150px; /* Set the desired width */
+    margin-left: 110px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(14, 92, 194); /* Dark gray for buttons */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.bar-right-buttons {
+    text-align: center;
+    background-color: transparent;
+}
+
+.bar-right-buttons a {
+    margin-right: 10px;
+    border: 1px solid rgb(18, 120, 255);
+    padding: 14px;
+    padding-top: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgb(18, 120, 255);
+    border-radius: 0.375rem;
+}
+
+.bar-right-buttons a:hover {
+    transition: background-color 0.5s ease, opacity 0.9s ease;
+    background-color: transparent; /* Make the background transparent on hover */
+}
+
+.button {
+    display: inline-block;
+    padding: 16px; /* Adjust the vertical padding */
+    width: 150px; /* Set the desired width */
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(14, 92, 194); /* Dark gray for buttons */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: rgb(13, 79, 165); /* Dark gray on hover */
+}
+
+.space {
+    height: 100px; /* Adjust the space height between sections */
+}
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 80px; /* Adjust margin to avoid content overlapping with the fixed blue bar */
+}
+
+.content-title {
+    font-size: 39px; /* Adjust the font size for the content title */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.highlight-text {
+    color: rgb(18, 120, 255); /* Change the color to your desired color */
+}
+
+.content-text {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-container {
+    max-width: 600px; /* Set your desired maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.buttons {
+    text-align: center;
+    background-color: transparent;
+}
+
+.buttons a {
+    margin-right: 10px;
+    border: 1px solid rgb(18, 120, 255);
+    padding: 14px;
+    background-color: rgb(18, 120, 255);
+}
+
+.buttons a:hover {
+    transition: background-color 0.5s ease, opacity 0.9s ease;
+    background-color: transparent; /* Make the background transparent on hover */
+}
+
+.big-space {
+    height: 300px; /* Adjust the space height between buttons and black background */
+}
+
+.footer-background {
+    background-color: #272727; /* Black background for the rest of the side */
+    flex: 222px; /* Take remaining height */
+}
+
+.content-header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.middle-content {
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about-container {
+    max-width: 1100px; /* Adjust the maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left;
+    display: flex;
+    column-gap: 200px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px; /* Add padding for better spacing */
+}
+
+.about-container2 {
+    max-width: 1100px; /* Adjust the maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left;
+    display: flex;
+    column-gap: 100px;
+    justify-content: space-between;
+    padding: 25px; /* Add padding for better spacing */
+}
+
+.about-button {
+    display: inline-block;
+    padding: 16px; /* Adjust the vertical padding */
+    width: 150px; /* Set the desired width */
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(14, 92, 194); /* Dark gray for buttons */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.about-buttons {
+    text-align: center;
+    background-color: transparent;
+}
+
+.about-buttons a {
+    margin-right: 10px; /* Adjust the space between buttons */
+    border: 1px solid rgb(18, 120, 255); /* Add an outline */
+    padding: 14px; /* Adjust padding for better appearance */
+    background-color: rgb(18, 120, 255);
+}
+
+.about-buttons a:hover {
+    transition: background-color 0.5s ease, opacity 0.9s ease;
+    background-color: transparent; /* Make the background transparent on hover */
+}
+
+.image-content {
+    width: 380px;
+    height: 320px;
+}
+
+.image-content2 {
+    width: 400px;
+    height: 300px;
+}
+
+.image-content3 {
+    width: 460px;
+    height: 290px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-column {
+    padding: 1px;
+    text-align: center; /* Center the content within each column */
+}
+
+.footer-text {
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 111;
+    color: #999999;
+    margin: 0; /* Remove the default margin on p elements */
+    text-align: left;
+    text-decoration: none;
+}
+
+.footer-text:hover {
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 111;
+    color: rgb(18, 120, 255);
+    margin: 0; /* Remove the default margin on p elements */
+    text-align: left;
+    text-decoration: none;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+    margin: 0; /* Remove the default margin on h3 elements */
+}
+
+.copyright {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #999999;
+}
