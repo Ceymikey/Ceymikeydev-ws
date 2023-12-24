@@ -10,6 +10,26 @@ body {
     overflow-y: scroll; /* Enable vertical scrolling */
 }
 
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1.5s ease-in-out forwards;
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Add styles for when the element is visible */
+.fade-in-out.visible {
+    opacity: 1;
+}
+
 .header {
     text-align: center;
 }
@@ -26,6 +46,17 @@ body {
 }
 
 .header-text:hover {
+    color: rgb(18, 120, 255);
+}
+
+.nav-text {
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0; /* Remove the default margin on p elements */
+    text-align: left;
+    text-decoration: none;
     color: rgb(18, 120, 255);
 }
 
