@@ -1,0 +1,291 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #202020; /* Dark gray background for the whole page */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-y: scroll; /* Enable vertical scrolling */
+}
+
+.header {
+    text-align: center;
+}
+
+.header-text {
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0; /* Remove the default margin on p elements */
+    text-align: left;
+    text-decoration: none;
+}
+
+.header-text:hover {
+    color: rgb(18, 120, 255);
+}
+
+.nav-text {
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0; /* Remove the default margin on p elements */
+    text-align: left;
+    text-decoration: none;
+    color: rgb(18, 120, 255);
+}
+
+.blue-bar {
+    background-color: #272727; /* Blue bar */
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%; /* Full width */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Set a higher z-index to be on top of other elements */
+}
+
+.bar-left h1 {
+    margin: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bar-right {
+    display: flex;
+    gap: 15px;
+    margin-right: auto; /* Align to the right */
+    margin-left: 450px;
+    padding: 16px;
+}
+
+.bar-right-button {
+    padding: 16px; /* Adjust the vertical padding */
+    width: 150px; /* Set the desired width */
+    margin-left: 110px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(14, 92, 194); /* Dark gray for buttons */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.bar-right-buttons {
+    text-align: center;
+    background-color: transparent;
+}
+
+.bar-right-buttons a {
+    margin-right: 10px;
+    border: 1px solid rgb(18, 120, 255);
+    padding: 14px;
+    padding-top: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: rgb(18, 120, 255);
+    border-radius: 0.375rem;
+}
+
+.bar-right-buttons a:hover {
+    transition: background-color 0.5s ease, opacity 0.9s ease;
+    background-color: transparent; /* Make the background transparent on hover */
+}
+
+.button {
+    display: inline-block;
+    padding: 16px; /* Adjust the vertical padding */
+    width: 150px; /* Set the desired width */
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgb(14, 92, 194); /* Dark gray for buttons */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: rgb(13, 79, 165); /* Dark gray on hover */
+}
+
+.space {
+    height: 100px; /* Adjust the space height between sections */
+}
+
+.content-title {
+    font-size: 39px; /* Adjust the font size for the content title */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.highlight-text {
+    color: rgb(18, 120, 255); /* Change the color to your desired color */
+}
+
+.content-container {
+    max-width: 600px; /* Set your desired maximum width */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.buttons {
+    text-align: center;
+    background-color: transparent;
+}
+
+.buttons a {
+    margin-right: 10px;
+    border: 1px solid rgb(18, 120, 255);
+    padding: 14px;
+    background-color: rgb(18, 120, 255);
+}
+
+.buttons a:hover {
+    transition: background-color 0.5s ease, opacity 0.9s ease;
+    background-color: transparent; /* Make the background transparent on hover */
+}
+
+.big-space {
+    height: 300px; /* Adjust the space height between buttons and black background */
+}
+
+.footer-background {
+    background-color: #272727; /* Black background for the rest of the side */
+    flex: 222px; /* Take remaining height */
+}
+
+.middle-content {
+    padding: 40px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-header {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.content-text {
+    font-size: 21px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 330px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.boxes {
+    display: flex;
+    padding: 100%;
+}
+
+.service-1,
+.service-2,
+.service-3 {
+    width: calc(23% - 2px);
+    text-decoration: none;
+    border: 3px solid #333;
+    background-color: #202020;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0 5px; /* Add margin to all sides */
+    margin-left: 170px;
+    margin-bottom: 0; /* Remove the margin-bottom */
+}
+
+.service-1:hover,
+.service-2:hover,
+.service-3:hover {
+    max-height: 100%;
+    border: 3px solid #4b4b4b;
+    background-color: #3b3b3b;
+    transition: background-color, border, 0.3s ease, opacity 1s ease;
+}
+
+.image-content,
+.image-content2,
+.image-content3 {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 190px;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-column {
+    padding: 1px;
+    text-align: center; /* Center the content within each column */
+}
+
+.footer-text {
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 111;
+    color: #999999;
+    margin: 0; /* Remove the default margin on p elements */
+    text-align: left;
+    text-decoration: none;
+}
+
+.footer-text:hover {
+    padding: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 111;
+    color: rgb(18, 120, 255);
+    margin: 0; /* Remove the default margin on p elements */
+    text-align: left;
+    text-decoration: none;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+    margin: 0; /* Remove the default margin on h3 elements */
+}
+
+.copyright {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #999999;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1.5s ease-in-out forwards;
+}
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Add styles for when the element is visible */
+.fade-in-out.visible {
+    opacity: 1;
+}
