@@ -257,6 +257,13 @@ body {
     height: 290px;
 }
 
+.image-content4 {
+    width: 460px;
+    height: 210px;
+    padding-top: 67px;
+    padding-bottom: auto;
+}
+
 .footer {
     text-align: center;
     padding: 10px;
