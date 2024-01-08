@@ -1,3 +1,4 @@
+@import url();
 body {
     margin: 0;
     padding: 0;
@@ -162,7 +163,7 @@ body {
 }
 
 .space {
-    height: 100px; /* Adjust the space height between sections */
+    height: 150px; /* Adjust the space height between sections */
 }
 
 .main-content {
@@ -173,7 +174,7 @@ body {
 }
 
 .content-title {
-    font-size: 39px; /* Adjust the font size for the content title */
+    font-size: 55px; /* Adjust the font size for the content title */
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -182,7 +183,7 @@ body {
 }
 
 .content-text {
-    font-size: 24px;
+    font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -209,7 +210,7 @@ body {
 }
 
 .big-space {
-    height: 300px; /* Adjust the space height between buttons and black background */
+    height: 400px; /* Adjust the space height between buttons and black background */
 }
 
 .footer-background {
@@ -257,6 +258,29 @@ body {
     height: 280px;
     border: 2px solid rgb(160, 160, 160); /* Add a white border with 2px width */
     box-sizing: border-box; /* Include border in the total width and height */
+}
+
+section {
+    display: grid;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
 }
 
 .footer {

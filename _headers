@@ -1,10 +1,7 @@
 /pages/admin/ceymikey
-  Server: Ceymikey WS
   X-Frame-Options: DENY
-  X-Content-Type-Options: Ceymikeydev WS
   X-Powered-By: Ceymikey Technologies
 
 /*
   X-Frame-Options: DENY
-  X-Content-Type-Options: Ceymikeydev WS
   X-Powered-By: Ceymikey Technologies
