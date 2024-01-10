@@ -40,7 +40,7 @@ body {
     color: rgb(18, 120, 255);
 }
 
-.blue-bar {
+.bar-header {
     background-color: #272727; /* Blue bar */
     padding: 15px;
     display: flex;
@@ -157,7 +157,7 @@ body {
 }
 
 .big-space {
-    height: 300px; /* Adjust the space height between buttons and black background */
+    height: 270px; /* Adjusts the space height between buttons and black background */
 }
 
 .footer-background {

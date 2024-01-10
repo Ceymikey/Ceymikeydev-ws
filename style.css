@@ -83,9 +83,10 @@ body {
     border: 1px solid white;
 }
 
-.blue-bar {
-    background-color: #272727; /* Blue bar */
-    padding: 15px;
+.bar-header {
+    display: flex;
+    background-color: #202020; /* Blue bar */
+    padding: 16px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -212,6 +213,8 @@ body {
     max-width: 11100px;
 }
 
+/* TEXT STYLES */
+
 .content-title {
     font-size: 55px; /* Adjust the font size for the content title */
     font-family: Arial, Helvetica, sans-serif;
@@ -232,6 +235,8 @@ body {
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+/* TEXT STYLES END */
 
 .content-container {
     max-width: 730px; /* Set your desired maximum width */
@@ -256,7 +261,7 @@ body {
 }
 
 .big-space {
-    height: 400px; /* Adjust the space height between buttons and black background */
+    height: 270px; /* Adjusts the space height between buttons and black background */
 }
 
 .footer-background {
@@ -388,6 +393,7 @@ section {
 
 .scroller {
     max-width: 1140px;
+    margin-left: 390px;
   }
   
   .scroller__inner {
@@ -396,11 +402,11 @@ section {
     flex-wrap: wrap;
     gap: 1.3rem;
     transform: scale(1);
-    transition: transform 1s ease; /* Add transition only for transform */
+    transition: transform 2s ease; /* Add transition only for transform */
 }
 
-.scroller:hover .scroller__inner {
-    transform: scale(1.1);
+.scroller:hover {
+    transform: scale(1.125);
 }
   
   .scroller[data-animated="true"] {
@@ -456,15 +462,6 @@ section {
     color-scheme: dark;
   }
   
-  body {
-    display: grid;
-    min-block-size: 100vh;
-    place-content: center;
-    font-family: system-ui;
-    font-size: 1.125rem;
-    background-color: var(--clr-primary-800);
-  }
-  
   .tag-list {
     margin: 0;
     padding-inline: 0;
@@ -474,7 +471,6 @@ section {
   .tag-list li {
     padding: 7rem;
     background: var(--clr-primary-400);
-    border-radius: 1.5rem;
-    box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+    border-radius: 1rem;
   }
   
