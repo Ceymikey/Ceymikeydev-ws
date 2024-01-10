@@ -1,4 +1,6 @@
-@import url();
+/* Importing external stylesheets should be done like this */
+/*@import url();*/
+
 body {
     margin: 0;
     padding: 0;
@@ -103,7 +105,7 @@ body {
     display: flex;
     gap: 15px;
     margin-right: auto; /* Align to the right */
-    margin-left: 450px;
+    margin-left: 310px;
     padding: 16px;
 }
 
@@ -143,6 +145,8 @@ body {
     background-color: transparent; /* Make the background transparent on hover */
 }
 
+/* -----Buttons START----- */
+
 .button {
     display: inline-block;
     padding: 16px; /* Adjust the vertical padding */
@@ -162,6 +166,39 @@ body {
     background-color: rgb(13, 79, 165); /* Dark gray on hover */
 }
 
+.block-button {
+    background-color: transparent;
+    display: inline-block;
+    padding: 16px; /* Adjust the vertical padding */
+    width: 150px; /* Set the desired width */
+    padding-right: 38px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.block-button a {
+    margin-right: 10px;
+    border: 1px solid rgb(18, 120, 255);
+    padding: 14px;
+    background-color: rgb(18, 120, 255);
+    color: white;
+}
+
+.block-button a:hover {
+    transition: background-color, color 0.7s ease, opacity 1s ease;
+    background-color: rgb(13, 79, 165); /* Dark gray on hover */
+    color: white;
+    border: 1px solid rgb(18, 120, 255);
+}
+
+/* -----Buttons END----- */
+
 .space {
     height: 150px; /* Adjust the space height between sections */
 }
@@ -171,6 +208,8 @@ body {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 80px; /* Adjust margin to avoid content overlapping with the fixed blue bar */
+    font-weight: bold;
+    max-width: 11100px;
 }
 
 .content-title {
@@ -182,13 +221,20 @@ body {
     color: rgb(18, 120, 255); /* Change the color to your desired color */
 }
 
+.block-text {
+    color: #ffffff;
+    padding: 4px;
+    border-radius: 0.3rem;
+    background-color: rgb(18, 120, 255);
+}
+
 .content-text {
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .content-container {
-    max-width: 600px; /* Set your desired maximum width */
+    max-width: 730px; /* Set your desired maximum width */
     margin: 0 auto; /* Center the container horizontally */
 }
 
@@ -256,8 +302,18 @@ body {
 .image-content3 {
     width: 200px;
     height: 280px;
-    border: 2px solid rgb(160, 160, 160); /* Add a white border with 2px width */
+    border: 2px solid rgba(155, 154, 154, 0.644); /* Add a white border with 2px width */
     box-sizing: border-box; /* Include border in the total width and height */
+    transition: all .5s ease-in-out;
+}
+
+.image-content:hover,
+.image-content2:hover,
+.image-content3:hover {
+    border: 2px solid rgb(172, 172, 172);
+    transition: all 0.8s;
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 section {
@@ -327,3 +383,98 @@ section {
     font-family: Arial, Helvetica, sans-serif;
     color: #999999;
 }
+
+/* Scroller CSS */
+
+.scroller {
+    max-width: 1140px;
+  }
+  
+  .scroller__inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+    transform: scale(1);
+    transition: transform 1s ease; /* Add transition only for transform */
+}
+
+.scroller:hover .scroller__inner {
+    transform: scale(1.1);
+}
+  
+  .scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  }
+  
+  .scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+  }
+  
+  .scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+  }
+  
+  .scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+  }
+  
+  .scroller[data-speed="fast"] {
+    --_animation-duration: 20s;
+  }
+  
+  .scroller[data-speed="slow"] {
+    --_animation-duration: 60s;
+  }
+  
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+  
+  /* general styles */
+  
+  :root {
+    --clr-neutral-100: hsl(0, 0%, 100%);
+    --clr-primary-100: hsl(205, 15%, 58%);
+    --clr-primary-400: hsl(215, 25%, 27%);
+  }
+  
+  html {
+    color-scheme: dark;
+  }
+  
+  body {
+    display: grid;
+    min-block-size: 100vh;
+    place-content: center;
+    font-family: system-ui;
+    font-size: 1.125rem;
+    background-color: var(--clr-primary-800);
+  }
+  
+  .tag-list {
+    margin: 0;
+    padding-inline: 0;
+    list-style: none;
+  }
+  
+  .tag-list li {
+    padding: 7rem;
+    background: var(--clr-primary-400);
+    border-radius: 1.5rem;
+    box-shadow: 0 0.5rem 1rem -0.25rem var(--clr-primary-900);
+  }
+  
