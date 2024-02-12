@@ -4,13 +4,13 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #202020; /* Dark gray background for the whole page */
+  background-color: #202020;
   color: white;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow-x: hidden; /* Hide horizontal overflow */
-  overflow-y: scroll; /* Enable vertical scrolling */
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .fade-in {
@@ -18,7 +18,6 @@ body {
   animation: fadeInAnimation 1.5s ease-in-out forwards;
 }
 
-/* Keyframes for the fade-in animation */
 @keyframes fadeInAnimation {
   from {
     opacity: 0;
@@ -28,7 +27,6 @@ body {
   }
 }
 
-/* Add styles for when the element is visible */
 .fade-in-out.visible {
   opacity: 1;
 }
@@ -43,7 +41,7 @@ body {
   font-size: 18px;
   font-weight: bold;
   color: #ffffff;
-  margin: 0; /* Remove the default margin on p elements */
+  margin: 0;
   text-align: left;
   text-decoration: none;
 }
@@ -57,7 +55,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: bold;
-  margin: 0; /* Remove the default margin on p elements */
+  margin: 0;
   text-align: left;
   text-decoration: none;
   color: rgb(18, 120, 255);
@@ -78,22 +76,22 @@ body {
 
 .header-buttons a:hover {
   transition: background-color, color 0.7s ease, opacity 1s ease;
-  background-color: transparent; /* Make the background transparent on hover */
+  background-color: transparent;
   color: white;
   border: 1px solid white;
 }
 
 .bar-header {
   display: flex;
-  background-color: #202020; /* Blue bar */
+  background-color: #202020;
   padding: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 100%; /* Full width */
-  top: 0; /* Stick to the top */
-  z-index: 1000; /* Set a higher z-index to be on top of other elements */
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .bar-left h1 {
@@ -105,19 +103,19 @@ body {
 .bar-right {
   display: flex;
   gap: 15px;
-  margin-right: auto; /* Align to the right */
+  margin-right: auto;
   margin-left: 310px;
   padding: 16px;
 }
 
 .bar-right-button {
-  padding: 16px; /* Adjust the vertical padding */
-  width: 150px; /* Set the desired width */
+  padding: 16px;
+  width: 150px;
   margin-left: 110px;
   text-align: center;
   text-decoration: none;
   color: white;
-  background-color: rgb(14, 92, 194); /* Dark gray for buttons */
+  background-color: rgb(14, 92, 194);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -143,19 +141,19 @@ body {
 
 .bar-right-buttons a:hover {
   transition: background-color 0.5s ease, opacity 0.9s ease;
-  background-color: transparent; /* Make the background transparent on hover */
+  background-color: transparent;
 }
 
 /* -----Buttons START----- */
 
 .button {
   display: inline-block;
-  padding: 16px; /* Adjust the vertical padding */
-  width: 150px; /* Set the desired width */
+  padding: 16px;
+  width: 150px;
   text-align: center;
   text-decoration: none;
   color: white;
-  background-color: rgb(14, 92, 194); /* Dark gray for buttons */
+  background-color: rgb(14, 92, 194);
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -164,14 +162,14 @@ body {
 }
 
 .button:hover {
-  background-color: rgb(13, 79, 165); /* Dark gray on hover */
+  background-color: rgb(13, 79, 165);
 }
 
 .block-button {
   background-color: transparent;
   display: inline-block;
-  padding: 16px; /* Adjust the vertical padding */
-  width: 150px; /* Set the desired width */
+  padding: 16px;
+  width: 150px;
   padding-right: 38px;
   text-align: center;
   text-decoration: none;
@@ -193,7 +191,7 @@ body {
 
 .block-button a:hover {
   transition: background-color, color 0.7s ease, opacity 1s ease;
-  background-color: rgb(13, 79, 165); /* Dark gray on hover */
+  background-color: rgb(13, 79, 165);
   color: white;
   border: 1px solid rgb(18, 120, 255);
 }
@@ -201,14 +199,14 @@ body {
 /* -----Buttons END----- */
 
 .space {
-  height: 150px; /* Adjust the space height between sections */
+  height: 150px;
 }
 
 .main-content {
   padding: 20px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 80px; /* Adjust margin to avoid content overlapping with the fixed blue bar */
+  margin-top: 80px;
   font-weight: bold;
   max-width: 11100px;
 }
@@ -216,12 +214,12 @@ body {
 /* TEXT STYLES */
 
 .content-title {
-  font-size: 55px; /* Adjust the font size for the content title */
+  font-size: 55px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .highlight-text {
-  color: rgb(18, 120, 255); /* Change the color to your desired color */
+  color: rgb(18, 120, 255);
 }
 
 .block-text {
@@ -239,8 +237,8 @@ body {
 /* TEXT STYLES END */
 
 .content-container {
-  max-width: 730px; /* Set your desired maximum width */
-  margin: 0 auto; /* Center the container horizontally */
+  max-width: 730px;
+  margin: 0 auto;
 }
 
 .buttons {
@@ -257,19 +255,19 @@ body {
 
 .buttons a:hover {
   transition: background-color 0.5s ease, opacity 0.9s ease;
-  background-color: transparent; /* Make the background transparent on hover */
+  background-color: transparent;
 }
 
 .big-space {
-  height: 270px; /* Adjusts the space height between buttons and black background */
+  height: 270px;
 }
 
 .side-background {
   display: flex;
-  background-color: #2e2e2e; /* Blue bar */
+  background-color: #2e2e2e;
   padding: 16px;
   display: flex;
-  width: 100%; /* Full width */
+  width: 100%;
   height: 400px;
   box-shadow: #202020;
 }
@@ -293,8 +291,8 @@ body {
 }
 
 .footer-background {
-  background-color: #272727; /* Black background for the rest of the side */
-  flex: 222px; /* Take remaining height */
+  background-color: #272727;
+  flex: 222px;
 }
 
 .content-header {
@@ -310,24 +308,24 @@ body {
 }
 
 .about-container {
-  max-width: 1100px; /* Adjust the maximum width */
-  margin: 0 auto; /* Center the container horizontally */
+  max-width: 1100px;
+  margin: 0 auto;
   text-align: left;
   display: flex;
   column-gap: 200px;
   justify-content: space-between;
   align-items: center;
-  padding: 40px; /* Add padding for better spacing */
+  padding: 40px;
 }
 
 .about-container2 {
-  max-width: 1100px; /* Adjust the maximum width */
-  margin: 0 auto; /* Center the container horizontally */
+  max-width: 1100px;
+  margin: 0 auto;
   text-align: left;
   display: flex;
   column-gap: 100px;
   justify-content: space-between;
-  padding: 25px; /* Add padding for better spacing */
+  padding: 25px;
 }
 
 .image-content,
@@ -335,8 +333,8 @@ body {
 .image-content3 {
   width: 200px;
   height: 280px;
-  border: 2px solid rgba(155, 154, 154, 0.644); /* Add a white border with 2px width */
-  box-sizing: border-box; /* Include border in the total width and height */
+  border: 2px solid rgba(155, 154, 154, 0.644);
+  box-sizing: border-box;
   transition: all 0.5s ease-in-out;
 }
 
@@ -383,7 +381,7 @@ section {
 
 .footer-column {
   padding: 1px;
-  text-align: center; /* Center the content within each column */
+  text-align: center;
 }
 
 .footer-text {
@@ -391,7 +389,7 @@ section {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 111;
   color: #999999;
-  margin: 0; /* Removes the default margin on p elements */
+  margin: 0;
   text-align: left;
   text-decoration: none;
 }
@@ -401,7 +399,7 @@ section {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 111;
   color: rgb(18, 120, 255);
-  margin: 0; /* Removes the default margin on p elements */
+  margin: 0;
   text-align: left;
   text-decoration: none;
 }
@@ -409,7 +407,7 @@ section {
 .footer-link {
   text-decoration: none;
   color: white;
-  margin: 0; /* Remove the default margin on h3 elements */
+  margin: 0;
 }
 
 .copyright {
@@ -431,7 +429,7 @@ section {
   flex-wrap: wrap;
   gap: 1.3rem;
   transform: scale(1);
-  transition: transform 2s ease; /* Add transition only for transform */
+  transition: transform 2s ease;
 }
 
 .scroller:hover {
