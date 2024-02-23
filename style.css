@@ -477,8 +477,6 @@ section {
   }
 }
 
-/* general styles */
-
 :root {
   --clr-neutral-100: hsl(0, 0%, 100%);
   --clr-primary-100: hsl(205, 15%, 58%);
